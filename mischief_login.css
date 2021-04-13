@@ -1,0 +1,373 @@
+body{
+    word-break: keep-all;
+    font-family: 'HelveticaLTWXX-Roman','Noto Sans KR',Helvetica,sans-serif;
+}
+
+header{
+    
+    height: 128.56px;
+    padding: 30px 30px 0 30px;
+    margin: 0 auto;
+}
+
+main{
+    height: 1620px;
+    
+}
+
+input[id ="hm_icon"]{
+    display: none;
+}
+
+input[id ="hm_icon"]+label{
+    display: block;
+    width: 40px;
+    height: 23px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    top: 25px;
+    margin: 40px 0 0px 0px;
+}
+
+input[id ="hm_icon"]+ label span{
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    transition: all 0.35s;
+}
+
+input[id ="hm_icon"]:checked+label{
+    z-index: 2;
+}
+
+input[id ="hm_icon"]+label span:nth-child(1){
+    top : 0;
+}
+
+input[id ="hm_icon"]+label span:nth-child(2){
+    top : 50%;
+    transform: translate(0,-50%);
+    
+}
+
+input[id ="hm_icon"]+label span:nth-child(3){
+    bottom :0;
+}
+
+input[id ="hm_icon"]:checked+label span:nth-child(1){
+    top : 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id ="hm_icon"]:checked+label span:nth-child(2){
+    opacity: 0;
+}
+
+input[id ="hm_icon"]:checked+label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sideBar"]{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition:all 0.1s;
+    background-color: white;
+    z-index: 1;
+}
+
+input[id = "hm_icon"]:checked+label+div{
+    left: 0;
+}
+
+#sideBar_menu1{
+    margin: 140px 0 0 0;
+}
+
+#unlist_menu1{
+    list-style: none;
+}
+
+#unlist_menu2{
+    list-style: none;
+    padding-top: 10px;
+}
+
+
+#black{
+    color: black;
+    font-size: 13px;
+    font-family: HelveticaLTWXX-Bold;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+#black>a{
+    text-decoration: none;
+    color: black;
+}
+
+#red{
+    font-size: 13px;
+    font-family: HelveticaLTWXX-Bold;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 10px 0 0 0;
+}
+
+#red>a{
+    text-decoration: none;
+    color: red;
+}
+
+#unlist_menu1 > li:not(:first-child, :last-child){
+    font-size: 13px;
+    font-family: HelveticaLTWXX-Bold;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 10px 0 0 0;
+}
+
+.unlist_color{
+    text-decoration: none;
+    color: #999;
+}
+
+#unlist_menu2 > li{
+    font-size: 13px;
+    font-family: HelveticaLTWXX-Bold;
+    font-weight: bold;
+    color: black;
+    line-height: 1.6;
+    padding: 10px 0 0 0;
+}
+
+#unlist_menu1>li>a:hover{
+    text-decoration: underline;
+}
+
+#unlist_menu2>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+#unlist_menu2>li>a:hover{
+    text-decoration: underline;
+}
+
+#main_logo{
+    margin: 0 0 0 470px;
+    position: fixed;
+    right: 500px;
+    z-index: 3;
+}
+
+#main_logo >img{
+    width: 640px;
+    display: inline-block;
+}
+
+#right_menu{
+    position: fixed;
+    right : 25px;
+    top: 30px;
+    z-index: 4;
+}
+
+#right_menu > ul{
+    list-style: none;
+    font-size: 12px;
+    font-family: 'HelveticaLTWXX-Bold','Noto Sans KR',Helvetica,sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: right;
+}
+
+#korea{
+    margin: -2px;
+}
+
+.underline{
+    text-decoration: none;
+    color: black;
+}
+
+a.underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#topsearchline{
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    top: -140px;
+    left: 0;
+    background-color: white;
+    transition: all .35s;
+}
+
+#topsearchline>img{
+    width: 32px;
+    height: 32px;
+    right: 0;
+}
+
+#topsearchbar{
+    width: 90.5%;
+    height: 60px;
+    margin: 40px 0px 0 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    background-image: url(./ms-search.png) ;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 0px 35px;
+    font-size: 20px;
+    padding: 20px 0 0 50px;;
+    outline: none;
+}
+
+.searchclick{
+    color: black;
+    text-decoration: none;
+}
+
+#search>a:hover.searchclick{
+    text-decoration: underline;
+}
+
+#imgclose{
+    cursor: pointer;
+}
+
+footer > ul{
+    font-size: 12px;
+    list-style: none;
+    display: inline-block;
+    padding: 20px 0 0 0;
+}
+
+.info{
+    padding: 0 0 0 160px;
+}
+
+#main1{
+    width: 1650px;
+    position: relative;
+    left: 40%;
+    top: 3%;
+}
+
+#inputbox1>input{
+    width: 372px;
+    height: 43px;
+    border: 1px solid #d7d5d5;
+    outline: none;
+    padding-left: 5px;
+}
+
+#inputbox2>input{
+    width: 372px;
+    height: 43px;
+    margin: 8px 0 0 0px;
+    border: 1px solid #d7d5d5;
+    outline: none;
+    padding-left: 5px;
+}
+
+#check{
+    display: none;
+}
+
+input[id="check"]+label img{
+    width: 18px;
+    height: 18px;
+    margin: 5px 5px -4px 0;
+    cursor: pointer;
+}
+
+#checktext{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#loginbutton{
+    margin: 10px 0 0 0;
+}
+
+#loginbutton > button{
+    width: 379px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+#logintext1 >ul >li >a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+#logintext1>ul{
+    margin: 20px 0px 0px 40px;
+}
+
+#logintext1>ul>li{
+    display: inline-block;
+}
+
+#loginline{
+    background-color: #ddd;
+    width: 1px;
+    height: 13px;
+    margin: 0 0 0 55px;
+}
+
+#loginline2{
+    margin: 0 0 0 50px;
+}
+
+
+#logintext2 >ul >li >a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+#logintext2>ul>li{
+    display: inline-block;
+    
+}
+
+#loginline3{
+    background-color: #ddd;
+    width: 1px;
+    height: 13px;
+    margin: 0 0 0 42px;
+}
+
+#centerline{
+    margin: 0 0 0 28px;
+}
+
+#loginline4{
+    margin: 0 0 0 50px;
+}
+
+#logintext1>ul>li>a:hover.login_hover_underline{
+    text-decoration: underline;
+}
+
+#logintext2>ul>li>a:hover.login_hover_underline{
+    text-decoration: underline;
+}
